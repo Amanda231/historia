@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Em busca do tesouro</title>
 </head>
 <body>
     <main>
-        <div class="passo" id="passo-0">
+        <div class="passo ativo" id="passo-0">
             <p>Um dia desses em uma vila de pscadores dois piratas exploram a vila e encontraram uma garrafa antiga parcialmente enterrada na areia, para a surpresa deles, havia um mapa dentro!</p>
             <button class="btn-proximo" data-proximo="1">Ilha do Misterio</button>
             <button class="btn-proximo" data-proximo="2">Ilha Verdejante</button>
@@ -34,7 +38,7 @@
 </div>
 
 <div class="passo" id="passo-4">
-    <img src="" alt="imagem continuando a aventura">
+    <img src="" alt="imagem voltando para a aventura">
     <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
         encontrado então continua o perurso.</p>
 </div>
@@ -49,3 +53,40 @@
     <p>Explorando a ilha, você encontra um cemitério de piratas escondido, leva a portões fechados.</p>
     <button class="btn-proximo" data-proximo="8">Continuar explorano o cemitério</button>
 </div>
+<div class="passo" id="passo-7">
+    <p>No cemitério depois de destrancar os portões, a busca pelo teouro escondio se intensifica. Você se depara com uma trilha bifurcada.</p>
+    <button class="btn-proximo" data-proximo="9">Seguir pela trilha à esquerda</button>
+    <button class="btn-proximo" data-proximo="10">Seguir pela tritlha à direita</button>
+</div>
+
+<div class="passo" id="passo-8">
+    <p>De volta a ilha, você finalmente encontra o mapa antigo. Agora, para o Cemitério!</p>
+    <button class="btn-proximo" data-proximo="7">Seguir para o Cemitério</button>
+</div>
+
+<div class="passo" id="passo-9">
+    <p>A trilha à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam o local do tesouro perdido.</p>
+    <button class="btn-proximo" data-proximo="11">Explorar local do tesouro</button>
+</div>
+
+<div class="passo" id="passo-10">
+    <p>A trilha à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais o tesouro
+        aqui.</p>
+    <button class="btn-proximo" data-proximo="12">Retornar e tentar a próxima trilha</button>
+</div>
+
+<div class="passo" id="passo-11">
+    <img src="" alt="encontrando um local maravilhoso do tesouro">
+    <p>Dentro do local, você descobre uma cidade inimaginável e decide se dedicar a estudar e preservar
+        este lugar</p>
+</div>
+
+<div class="passo" id="passo-12">
+    <p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições
+        que levam ao local o teouro.</p>
+    <button class="btn-proximo" data-proximo="11">Explorar local do tesouro</button>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
